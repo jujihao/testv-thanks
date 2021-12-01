@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.bootcdn.net/ajax/libs/bulma/0.9.3/css/bulma.min.css" rel="stylesheet">
+    <!-- bulma CSS -->
+    <link href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/bulma/0.9.3/css/bulma.min.css" rel="stylesheet">
+    <!-- UIkit CSS -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/uikit/3.7.1/css/uikit.min.css" rel="stylesheet">
+    <!-- UIkit JS -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/uikit/3.7.1/js/uikit.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/uikit/3.7.1/js/uikit-icons.min.js"></script>
+    <!-- jquery JS -->
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
-    </script>
+    <!-- 不蒜子服务 -->
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <style>
       body{
         background-color: #8BC6EC;
@@ -32,29 +39,50 @@
     <title>感谢您的支持——TESTV</title>
 </head>
 <body>
-        <nav class="navbar ,columns is-mobile" role="navigation" aria-label="main navigation">
+       <!-- <nav class="navbar ,columns is-mobile" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a class="navbar-item" href="https://www.testv.cn/">
             <img src="img/logo-balck.png" width="112" height="28" alt="">
           </a>
         </div>
-        </nav>
+        </nav>-->
+       <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+           <a class="uk-navbar-item uk-logo" href="https://www.testv.cn/">
+               <img src="img/logo-balck.png" width="112" height="28" alt="">
+           </a>
 
-        <br>
-        <br>
-        <br>
+           <div class="uk-navbar-right">
+
+               <ul class="uk-navbar-nav">
+                   <li>
+                       <a href="#">
+                           <img src="img/integral.png" width="32" height="32" alt="">
+                       </a>
+                       <div class="uk-navbar-dropdown">
+                           <ul class="uk-nav uk-navbar-dropdown-nav">
+                               <li class="uk-active"><a href="#">即将上线</a></li>
+                               <li><a href="#">每月打赏感谢名单</a></li>
+                               <li class="uk-nav-divider"></li>
+                               <li><a href="#">一些想让你更加了解TESTV的内容</a></li>
+                           </ul>
+                       </div>
+                   </li>
+               </ul>
+           </div>
+       </nav>
+
         <br>
         <h2 class="title is-2 is-spaced index-center text-center">感谢您们在“爱发电”的打赏</h2>
         <p class="subtitle is-4 index-center" style="text-align:center;">每一位铁丝小小的支持，我们就能让不可能，变成可能</p>
-        <br>
+
         <br>
         <p class="subtitle is-4 index-center text-center">特别感谢</p>
-        <p class="subtitle is-4 index-center text-center">还未公布就前来支持的铁丝们&emsp;共计50+1位<sup>*</sup></p>
+        <p class="subtitle is-4 index-center text-center">还未公布就前来支持的铁丝们&emsp;共计56+1位<sup>*</sup></p>
 
         <br>
         <div class="columns is-mobile is-vcentered index-center text-center" >
           <div class="column is-one-quarter">
-            <h5 class="subtitle is-5">梦岩dream（2次）</h5>
+            <h5 class="subtitle is-5">梦岩dream（3次）</h5>
           </div>
           <div class="column is-one-quarter">
             <h5 class="subtitle is-5">女后期是我的</h5>
@@ -245,9 +273,39 @@
                 <h5 class="subtitle is-5">gloryH</h5>
             </div>
             <div class="column is-one-quarter">
-                <h5 class="subtitle is-5"></h5>
+                <h5 class="subtitle is-5">Noah</h5>
             </div>
         </div>
+
+       <div class="columns is-mobile is-vcentered index-center text-center" >
+           <div class="column is-one-quarter">
+               <h5 class="subtitle is-5">0x10c</h5>
+           </div>
+           <div class="column is-one-quarter">
+               <h5 class="subtitle is-5">爱发电用户_QbXp</h5>
+           </div>
+           <div class="column is-one-quarter">
+               <h5 class="subtitle is-5">二</h5>
+           </div>
+           <div class="column is-one-quarter">
+               <h5 class="subtitle is-5">Barry</h5>
+           </div>
+       </div>
+
+       <div class="columns is-mobile is-vcentered index-center text-center" >
+           <div class="column is-one-quarter">
+               <h5 class="subtitle is-5">无畏</h5>
+           </div>
+           <div class="column is-one-quarter">
+               <h5 class="subtitle is-5">Theo</h5>
+           </div>
+           <div class="column is-one-quarter">
+               <h5 class="subtitle is-5">瑞辰成</h5>
+           </div>
+           <div class="column is-one-quarter">
+               <h5 class="subtitle is-5"></h5>
+           </div>
+       </div>
 
         <br>
         <br>
@@ -373,13 +431,11 @@
 
           <div class="content has-text-centered">
               <span id="busuanzi_container_page_pv">
-                本站总访问量<span id="busuanzi_value_page_pv"></span>次
+                本站总访问量<span id="busuanzi_value_page_pv"></span>次，感谢<a target="_blank" href="http://busuanzi.ibruce.info/">不蒜子</a>提供网页计数服务。
                 </span>
-                 <br>
-                  感谢<a target="_blank" href="http://busuanzi.ibruce.info/">不蒜子</a>提供网页计数服务。
+              <h6 class="subtitle is-6 index-center text-center"><sup>*</sup>其中1指的是第一位打赏者，但他并未选择支持，而是相信这种真实又单纯的梦想，并一起向这个期望出发，直到永远。</h6>
           </div>
 
-          <h6 class="subtitle is-6 index-center text-center"><sup>*</sup>.其中1指的是第一位打赏者，。</h6>但他并未选择支持，而是相信这种真实又单纯的梦想，并一起向这个期望出发，直到永远。
 
 
       </footer>
